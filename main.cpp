@@ -5,11 +5,12 @@ using namespace std;
 int fib(int n);
 
 int main(){
-	int number;
+	int number , sum = 0;
 	cin >> number;
 	for(int i = 1 ; i <= number ;i++){
-		cout << fib(i) << " ";
+		sum = sum + fib(i);
 	}
+	cout << "sum:" << sum;
 	
 	return 0;
 }
